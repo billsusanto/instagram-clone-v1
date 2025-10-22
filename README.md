@@ -1,245 +1,185 @@
 # Instagram Clone - Web Edition
 
-<div align="center">
-  <h3>A modern, web-optimized social media platform inspired by Instagram</h3>
-  <p>Full-featured Instagram clone with enhanced desktop experience and responsive design</p>
-  <p>
-    <strong>⚡ Ready for Netlify deployment</strong>
-  </p>
-</div>
+![Instagram Clone](https://img.shields.io/badge/React-18.2.0-blue)
+![Vite](https://img.shields.io/badge/Vite-5.0.8-purple)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.3.6-cyan)
+![License](https://img.shields.io/badge/License-MIT-green)
 
----
+A modern, production-ready Instagram clone built with React, Vite, and Tailwind CSS. This web-optimized version emphasizes desktop experience while maintaining full mobile responsiveness.
 
-## 🎨 Design Overview
+## 🌟 Features
 
-This project is a comprehensive Instagram-like web application optimized for desktop browsing while maintaining mobile responsiveness. Unlike the mobile-first Instagram app, this version takes advantage of larger screen real estate with a three-column layout, persistent navigation, and enhanced productivity features.
+### Core Functionality
+- ✅ **Photo Feed** - Infinite scroll with lazy loading
+- ✅ **Stories** - Horizontal scrollable stories with gradient rings
+- ✅ **Post Interactions** - Like, comment, save, and share posts
+- ✅ **User Suggestions** - Discover and follow new users
+- ✅ **Search** - Search for users with real-time results
+- ✅ **Create Posts** - Upload and share photos with captions
+- ✅ **Responsive Design** - Fully responsive from mobile to desktop
+- ✅ **Persistent State** - Local storage for likes, saves, and follows
 
-### Key Features
+### UI/UX Features
+- 🎨 Pixel-perfect Instagram design recreation
+- ⚡ Smooth animations and transitions
+- ♿️ WCAG 2.1 AA accessibility compliant
+- 🌙 Light theme (dark mode ready)
+- 📱 Mobile-first responsive design
+- ⌛ Loading states and error handling
+- ✨ Hover effects and micro-interactions
 
-- 📱 **Responsive Design** - Mobile-first approach with desktop enhancements
-- 🎯 **Content-First** - Clean, minimalist interface that highlights user content
-- ♿ **Accessible** - WCAG AA compliant with keyboard navigation support
-- 🚀 **Performance** - Optimized for fast loading and smooth interactions
-- 🌓 **Dark Mode Ready** - Complete dark mode color palette included
-- 📦 **Component Library** - Comprehensive design system with reusable components
-- ☁️ **Netlify Ready** - Pre-configured for seamless deployment
+### Technical Features
+- ⚙️ React 18 with hooks (useState, useEffect, useCallback, useMemo)
+- 🚀 Vite for lightning-fast builds
+- 🎨 Tailwind CSS with custom design system
+- 📦 Component-based architecture
+- 🧩 Custom React hooks for reusable logic
+- 🔍 ESLint for code quality
+- 💾 LocalStorage for state persistence
+- 🎯 Performance optimized (React.memo, lazy loading)
 
-## 📋 Design Specification
+## 🖥️ Screenshots
 
-The complete design specification is available in [`design-specification.json`](./design-specification.json), which includes:
+### Desktop View
+- Full three-column layout with feed, stories, and sidebar
+- Persistent navigation header
+- User suggestions and profile stats
 
-- **Color Palette** - Light and dark themes with WCAG AA compliant colors
-- **Typography System** - Font families, scales, weights, and line heights
-- **Layout & Spacing** - Grid system, breakpoints, and spacing scale
-- **Component Library** - 15+ UI components with states and variants
-- **User Flows** - Detailed interaction patterns and user journeys
-- **Accessibility** - ARIA labels, keyboard navigation, and screen reader support
-- **Deployment Configuration** - Complete Netlify setup instructions
+### Mobile View
+- Single-column optimized layout
+- Bottom navigation bar
+- Touch-optimized interactions
 
-## 🎨 Color Palette
+## 🚀 Quick Start
 
-### Light Mode
-```
-Primary:    #0095F6  (Instagram Blue)
-Secondary:  #262626  (Deep Charcoal)
-Accent:     #ED4956  (Like Red)
-Background: #FFFFFF / #FAFAFA / #F5F5F5
-Text:       #262626 / #8E8E8E / #BDBDBD
-```
+### Prerequisites
 
-### Dark Mode
-```
-Background: #000000 / #121212 / #1A1A1A
-Text:       #FFFFFF / #A8A8A8 / #737373
-```
+- Node.js 18.x or later
+- npm or yarn package manager
 
-### Instagram Gradient (Stories)
-```css
-linear-gradient(45deg, #F58529, #DD2A7B, #8134AF)
-```
+### Installation
 
-## 🏗️ Technology Stack
-
-### Recommended Frontend Stack
-```json
-{
-  "framework": "React 18+ or Next.js 14+",
-  "styling": "Tailwind CSS or Styled Components",
-  "stateManagement": "Zustand or Redux Toolkit",
-  "routing": "React Router v6 or Next.js App Router",
-  "forms": "React Hook Form + Zod",
-  "http": "Axios or TanStack Query",
-  "animations": "Framer Motion"
-}
-```
-
-## 📦 Components
-
-The design system includes the following components:
-
-- **Navigation** - Top bar, sidebar, bottom bar (mobile)
-- **Buttons** - Primary, secondary, text, danger variants
-- **Forms** - Input fields, search, text areas
-- **Cards** - Post cards, profile cards, story rings
-- **Modal** - Post view, forms, confirmations
-- **Dropdown** - Context menus, select options
-- **Toast** - Success, error, info notifications
-- **Avatar** - Multiple sizes with story indicators
-- **Badge** - Notification counters
-- **Loader** - Spinners and skeleton screens
-
-## 🚀 Deployment on Netlify
-
-This project is fully configured for seamless deployment on Netlify with optimized settings for performance and security.
-
-### Quick Deploy (Recommended)
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy)
-
-**OR Manual Steps:**
-
-1. **Connect Repository**
-   - Log in to [Netlify](https://app.netlify.com)
-   - Click **"Add new site"** → **"Import an existing project"**
-   - Connect to GitHub and select `billsusanto/instagram-clone-v1`
-
-2. **Configure Build Settings** (Auto-detected via `netlify.toml`)
-   ```
-   Build command:    npm run build
-   Publish directory: dist (or build for CRA)
-   Node version:     18.x
-   ```
-
-3. **Set Environment Variables** (Optional)
+1. **Clone the repository**
    ```bash
-   VITE_API_BASE_URL=your_api_url
-   VITE_APP_NAME=Instagram Clone
+   git clone https://github.com/billsusanto/instagram-clone-v1.git
+   cd instagram-clone-v1
    ```
 
-4. **Deploy**
-   - Click **"Deploy site"**
-   - ✅ Automatic deployments on every push to `main`
-   - ✅ Preview deployments for pull requests
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-### Manual Deploy with Netlify CLI
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:3000`
+
+### Build for Production
 
 ```bash
-# Install Netlify CLI
-npm install -g netlify-cli
-
-# Build the project (once you have source code)
-npm install
+# Build the application
 npm run build
 
-# Login to Netlify
-netlify login
-
-# Initialize and deploy
-netlify init
-netlify deploy --prod
+# Preview production build locally
+npm run preview
 ```
 
-### Build Configuration
+## 📁 Project Structure
 
-The `netlify.toml` file includes:
-- ✅ SPA routing support (client-side routing)
-- ✅ Security headers (XSS, CSRF, CSP protection)
-- ✅ Aggressive caching for static assets (1 year)
-- ✅ No caching for HTML files (always fresh)
-- ✅ Node.js 18.x environment
-- ✅ Environment-specific configurations
-
-## 📱 Responsive Breakpoints
-
-```css
-/* Mobile First Approach */
-
-/* Small devices (phones) */
-@media (min-width: 640px) { /* sm */ }
-
-/* Medium devices (tablets) */
-@media (min-width: 768px) { /* md */ }
-
-/* Large devices (desktops) */
-@media (min-width: 1024px) { /* lg */ }
-
-/* Extra large devices */
-@media (min-width: 1280px) { /* xl */ }
-@media (min-width: 1536px) { /* 2xl */ }
+```
+instagram-clone-v1/
+├── public/              # Static assets
+├── src/
+│   ├── components/     # React components
+│   │   ├── features/   # Feature-specific components
+│   │   │   ├── Post.jsx
+│   │   │   ├── Story.jsx
+│   │   │   └── Sidebar.jsx
+│   │   ├── layout/     # Layout components
+│   │   │   └── Header.jsx
+│   │   └── ui/         # Reusable UI components
+│   │       ├── Avatar.jsx
+│   │       ├── Button.jsx
+│   │       ├── Input.jsx
+│   │       ├── Modal.jsx
+│   │       └── Spinner.jsx
+│   ├── hooks/          # Custom React hooks
+│   │   ├── useClickOutside.js
+│   │   ├── useDebounce.js
+│   │   ├── useLocalStorage.js
+│   │   ├── useMediaQuery.js
+│   │   ├── useToggle.js
+│   │   └── useIntersectionObserver.js
+│   ├── utils/          # Utility functions
+│   │   ├── helpers.js
+│   │   └── mockData.js
+│   ├── App.jsx         # Main application component
+│   ├── main.jsx        # Application entry point
+│   └── index.css       # Global styles
+├── index.html          # HTML template
+├── package.json        # Dependencies and scripts
+├── vite.config.js      # Vite configuration
+├── tailwind.config.js  # Tailwind CSS configuration
+├── postcss.config.js   # PostCSS configuration
+├── netlify.toml        # Netlify deployment config
+└── README.md           # This file
 ```
 
-## ♿ Accessibility
+## 🎨 Design System
 
-- **WCAG AA Compliant** - All color contrasts meet 4.5:1 ratio
-- **Keyboard Navigation** - Full keyboard support with visible focus indicators
-- **Screen Readers** - Proper ARIA labels and semantic HTML
-- **Motion Preferences** - Respects `prefers-reduced-motion`
-- **Skip Links** - Skip to main content functionality
-- **Focus Management** - Proper tab order and focus trapping in modals
-
-## 🎯 User Flows
-
-The design specification includes detailed user flows for:
-
-1. **Authentication** - Login, signup, password reset
-2. **Create Post** - Upload, edit, caption, publish
-3. **Engagement** - Like, comment, share, save
-4. **Profile** - View, edit, follow/unfollow
-5. **Explore** - Discover content, search
-6. **Messaging** - Direct messages, conversations
-
-## 📊 Mock Data Structure
+### Color Palette
 
 ```javascript
-// User
-{
-  id: "user123",
-  username: "johndoe",
-  fullName: "John Doe",
-  avatar: "https://via.placeholder.com/150",
-  bio: "Photographer | Traveler | Coffee lover ☕",
-  followers: 1234,
-  following: 567,
-  posts: 89,
-  verified: false
-}
+// Primary Colors
+Primary Blue: #0095F6
+Dark Blue: #0077CC
+Light Blue: #33AAFF
 
-// Post
-{
-  id: "post456",
-  userId: "user123",
-  images: ["https://via.placeholder.com/600"],
-  caption: "Beautiful sunset 🌅 #sunset",
-  likes: 342,
-  comments: 28,
-  timestamp: "2024-01-15T18:30:00Z",
-  location: "Malibu Beach, CA"
-}
+// Accent Colors
+Like Red: #ED4956
+Gradient: #F58529 → #DD2A7B → #8134AF
 
-// Comment
-{
-  id: "comment789",
-  postId: "post456",
-  userId: "user456",
-  text: "Stunning capture! 📸",
-  likes: 12,
-  timestamp: "2024-01-15T19:00:00Z"
-}
+// Background
+White: #FFFFFF
+Light Gray: #FAFAFA
+Gray: #F5F5F5
+
+// Text
+Primary: #262626
+Secondary: #8E8E8E
+Muted: #BDBDBD
+
+// Borders
+Light: #EFEFEF
+Medium: #DBDBDB
+Dark: #A8A8A8
 ```
 
-## 🛠️ Getting Started
+### Typography
+
+- **Primary Font**: System UI (native fonts)
+- **Display Font**: Inter (Google Fonts)
+- **Monospace**: SF Mono, Monaco, Cascadia Code
+
+### Spacing Scale
+
+- xs: 4px
+- sm: 8px
+- md: 12px
+- lg: 16px
+- xl: 20px
+- 2xl: 24px
+- 3xl: 32px
+- 4xl: 40px
+
+## 🛠️ Available Scripts
 
 ```bash
-# Clone the repository
-git clone https://github.com/billsusanto/instagram-clone-v1.git
-
-# Navigate to project directory
-cd instagram-clone-v1
-
-# Install dependencies (once you add package.json)
-npm install
-
-# Start development server
+# Start development server with hot reload
 npm run dev
 
 # Build for production
@@ -247,107 +187,203 @@ npm run build
 
 # Preview production build
 npm run preview
+
+# Run ESLint to check code quality
+npm run lint
 ```
 
-## 📐 Layout Structure
+## 🐛 Browser Support
 
-### Desktop (1024px+)
-```
-┌─────────────────────────────────────────┐
-│  Header (Logo | Search | Actions)      │
-├────────┬─────────────────┬──────────────┤
-│ Side   │                 │  Suggested   │
-│ Nav    │   Main Feed     │  Users &     │
-│ Menu   │   (630px max)   │  Stories     │
-│        │                 │              │
-└────────┴─────────────────┴──────────────┘
-```
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers (iOS Safari, Chrome Mobile)
 
-### Mobile (0-639px)
-```
-┌─────────────────────────┐
-│  Header (Logo | Actions)│
-├─────────────────────────┤
-│                         │
-│     Main Feed           │
-│     (Full Width)        │
-│                         │
-├─────────────────────────┤
-│  Bottom Nav (5 icons)   │
-└─────────────────────────┘
-```
+## 📚 Tech Stack
 
-## 📝 Design Principles
+- **Framework**: React 18.2.0
+- **Build Tool**: Vite 5.0.8
+- **Styling**: Tailwind CSS 3.3.6
+- **Icons**: Lucide React 0.294.0
+- **Utilities**: clsx 2.0.0
+- **Language**: JavaScript (ES6+)
 
-1. **Content First** - Let user content shine
-2. **Simplicity** - Remove unnecessary complexity
-3. **Consistency** - Predictable patterns throughout
-4. **Accessibility** - Inclusive by default
-5. **Performance** - Fast and responsive
+## 📦 Dependencies
 
-## 🔮 Future Enhancements
-
-- [ ] Dark mode implementation (design tokens ready)
-- [ ] Advanced search with filters
-- [ ] Video post support with player controls
-- [ ] Live streaming interface
-- [ ] Shopping integration
-- [ ] Creator analytics dashboard
-- [ ] PWA support for offline functionality
-- [ ] Netlify Functions for backend API
-- [ ] Real-time notifications with WebSockets
-- [ ] Image optimization pipeline
-
-## 📁 Project Structure
-
-```
-instagram-clone-v1/
-├── design-specification.json  # Complete design system
-├── netlify.toml              # Netlify configuration
-├── README.md                 # This file
-├── .gitignore               # Git ignore rules
-└── src/                     # Source code (to be implemented)
-    ├── components/          # React components
-    ├── styles/             # CSS/styling files
-    ├── utils/              # Helper functions
-    ├── hooks/              # Custom React hooks
-    ├── pages/              # Page components
-    └── assets/             # Images, icons, fonts
+### Production Dependencies
+```json
+{
+  "react": "^18.2.0",
+  "react-dom": "^18.2.0",
+  "lucide-react": "^0.294.0",
+  "clsx": "^2.0.0"
+}
 ```
 
-## 🧪 Testing Checklist
+### Development Dependencies
+```json
+{
+  "vite": "^5.0.8",
+  "@vitejs/plugin-react": "^4.2.1",
+  "tailwindcss": "^3.3.6",
+  "autoprefixer": "^10.4.16",
+  "postcss": "^8.4.32",
+  "eslint": "^8.55.0"
+}
+```
 
-When implementing, ensure you test:
+## ♿️ Accessibility Features
 
-- [ ] Responsive design on multiple devices
-- [ ] Keyboard navigation throughout the app
-- [ ] Screen reader compatibility
-- [ ] Color contrast meets WCAG AA
-- [ ] Form validation and error states
-- [ ] Loading states for async operations
-- [ ] Cross-browser compatibility
-- [ ] Performance (Lighthouse score > 90)
+- Semantic HTML5 elements
+- ARIA labels and roles
+- Keyboard navigation support
+- Focus indicators on interactive elements
+- Color contrast WCAG AA compliant
+- Alt text for images
+- Screen reader friendly
 
-## 📄 License
+## 🚀 Deployment
 
-This is a design mockup project for educational and portfolio purposes.
+### Deploy to Netlify
+
+#### Method 1: Automatic Deployment (Recommended)
+
+1. Push your code to GitHub
+2. Log in to [Netlify](https://app.netlify.com)
+3. Click "Add new site" → "Import an existing project"
+4. Select your GitHub repository
+5. Configure build settings:
+   - **Build command**: `npm run build`
+   - **Publish directory**: `dist`
+6. Click "Deploy site"
+
+#### Method 2: Manual Deployment via CLI
+
+```bash
+# Install Netlify CLI
+npm install -g netlify-cli
+
+# Build the project
+npm run build
+
+# Login to Netlify
+netlify login
+
+# Deploy
+netlify deploy --prod
+```
+
+### Deploy to Vercel
+
+```bash
+# Install Vercel CLI
+npm install -g vercel
+
+# Deploy
+vercel
+```
+
+### Deploy to GitHub Pages
+
+1. Update `vite.config.js` with base path
+2. Run `npm run build`
+3. Deploy `dist` folder to GitHub Pages
+
+## 💡 Key Features Explained
+
+### State Management
+
+The app uses React hooks and localStorage for state management:
+
+- `useLocalStorage` - Persists likes, saves, and follows
+- `useToggle` - Manages modal open/close states
+- `useMediaQuery` - Handles responsive breakpoints
+- `useDebounce` - Optimizes search performance
+- `useClickOutside` - Closes dropdowns when clicking outside
+
+### Performance Optimizations
+
+- **React.memo()** - Prevents unnecessary re-renders
+- **useCallback** - Memoizes callback functions
+- **useMemo** - Memoizes expensive calculations
+- **Lazy Loading** - Images load only when visible
+- **Code Splitting** - Vendor chunks separated for optimal caching
+
+### Component Architecture
+
+- **Atomic Design** - Small, reusable components
+- **Single Responsibility** - Each component has one purpose
+- **Props Validation** - Type checking with ESLint
+- **Error Boundaries** - Graceful error handling
+
+## 📝 Environment Variables
+
+Create a `.env` file in the root directory:
+
+```env
+VITE_API_URL=http://localhost:3001
+VITE_API_KEY=your_api_key_here
+VITE_ENABLE_STORIES=true
+VITE_ENABLE_DIRECT_MESSAGES=true
+```
 
 ## 🤝 Contributing
 
-This is a personal project, but feedback and suggestions are welcome! Feel free to:
+Contributions are welcome! Please follow these steps:
 
-- Open an issue for bugs or suggestions
-- Submit a pull request with improvements
-- Star the repo if you find it useful
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## 📧 Contact
+## 📝 License
 
-For questions or feedback, please open an issue in this repository.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👤 Author
+
+**Bill Susanto**
+- GitHub: [@billsusanto](https://github.com/billsusanto)
+- Repository: [instagram-clone-v1](https://github.com/billsusanto/instagram-clone-v1)
+
+## 🚀 Future Enhancements
+
+- [ ] Dark mode support
+- [ ] Real-time messaging with WebSockets
+- [ ] Video posts and Reels
+- [ ] Stories viewer modal
+- [ ] Profile pages
+- [ ] Explore page with grid layout
+- [ ] Authentication (Login/Register)
+- [ ] Backend API integration
+- [ ] Image filters and editing
+- [ ] Notifications system
+- [ ] Comment threads
+- [ ] Direct messaging
+
+## ✨ Acknowledgments
+
+- Design inspiration from Instagram
+- Icons from [Lucide Icons](https://lucide.dev/)
+- Images from [Unsplash](https://unsplash.com/) and [Pravatar](https://pravatar.cc/)
+- Fonts from [Google Fonts](https://fonts.google.com/)
+
+## 📞 Support
+
+If you encounter any issues or have questions:
+
+1. Check the [Issues](https://github.com/billsusanto/instagram-clone-v1/issues) page
+2. Create a new issue with detailed information
+3. Contact via GitHub
 
 ---
 
 <div align="center">
-  <p>Built with ❤️ for learning and portfolio purposes</p>
-  <p>Design inspired by Instagram | Deployed on Netlify</p>
-  <p><strong>Ready to deploy! Just add your implementation.</strong></p>
+
+**Made with ❤️ by Bill Susanto**
+
+[View Demo](https://instagram-clone-v1.netlify.app) | [Report Bug](https://github.com/billsusanto/instagram-clone-v1/issues) | [Request Feature](https://github.com/billsusanto/instagram-clone-v1/issues)
+
 </div>
