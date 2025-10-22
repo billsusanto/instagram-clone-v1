@@ -1,0 +1,332 @@
+{
+  "projectInfo": {
+    "name": "Instagram Clone - Web Edition",
+    "version": "1.0.0",
+    "description": "A modern, web-optimized social media platform inspired by Instagram with enhanced desktop experience",
+    "designSystem": "Instagram Clone Design System v1",
+    "deployment": {
+      "platform": "Netlify",
+      "buildCommand": "npm run build",
+      "publishDirectory": "dist",
+      "nodeVersion": "18.x"
+    }
+  },
+
+  "designStyle": {
+    "approach": "Clean, modern, and minimalist with emphasis on visual content",
+    "philosophy": "Content-first design with subtle interface elements that don't compete with user-generated photos and videos",
+    "targetAudience": {
+      "primary": "Content creators and visual storytellers (18-45 years)",
+      "secondary": "Casual users sharing moments with friends and family",
+      "tertiary": "Businesses and brands building online presence"
+    },
+    "useCases": [
+      "Photo and video sharing",
+      "Social networking and engagement",
+      "Content discovery and exploration",
+      "Direct messaging",
+      "Stories and ephemeral content",
+      "Profile customization and personal branding"
+    ],
+    "brandPersonality": {
+      "traits": ["Modern", "Friendly", "Visual", "Engaging", "Trustworthy"],
+      "tone": "Casual yet polished, encouraging creativity and authentic expression",
+      "aesthetics": "Clean lines, generous whitespace, photography-focused, subtle animations"
+    }
+  },
+
+  "colorPalette": {
+    "light": {
+      "primary": {
+        "main": "#0095F6",
+        "dark": "#0077CC",
+        "light": "#33AAFF",
+        "contrast": "#FFFFFF",
+        "description": "Instagram blue - used for primary actions and brand elements"
+      },
+      "secondary": {
+        "main": "#262626",
+        "dark": "#000000",
+        "light": "#3F3F3F",
+        "contrast": "#FFFFFF",
+        "description": "Deep charcoal for text and secondary elements"
+      },
+      "accent": {
+        "gradient": {
+          "start": "#F58529",
+          "middle": "#DD2A7B",
+          "end": "#8134AF",
+          "description": "Instagram gradient - used sparingly for special features like Stories"
+        },
+        "like": "#ED4956",
+        "save": "#262626"
+      },
+      "background": {
+        "primary": "#FFFFFF",
+        "secondary": "#FAFAFA",
+        "tertiary": "#F5F5F5",
+        "overlay": "rgba(0, 0, 0, 0.65)",
+        "modal": "#FFFFFF"
+      },
+      "text": {
+        "primary": "#262626",
+        "secondary": "#8E8E8E",
+        "muted": "#BDBDBD",
+        "inverse": "#FFFFFF",
+        "link": "#0095F6"
+      },
+      "border": {
+        "light": "#EFEFEF",
+        "medium": "#DBDBDB",
+        "dark": "#A8A8A8"
+      },
+      "status": {
+        "success": {
+          "main": "#00C853",
+          "background": "#E8F5E9",
+          "contrast": "#FFFFFF"
+        },
+        "warning": {
+          "main": "#FFB300",
+          "background": "#FFF8E1",
+          "contrast": "#000000"
+        },
+        "error": {
+          "main": "#ED4956",
+          "background": "#FFEBEE",
+          "contrast": "#FFFFFF"
+        },
+        "info": {
+          "main": "#0095F6",
+          "background": "#E3F2FD",
+          "contrast": "#FFFFFF"
+        }
+      }
+    },
+    "dark": {
+      "primary": {
+        "main": "#0095F6",
+        "dark": "#0077CC",
+        "light": "#33AAFF",
+        "contrast": "#FFFFFF"
+      },
+      "secondary": {
+        "main": "#FFFFFF",
+        "dark": "#E0E0E0",
+        "light": "#FFFFFF",
+        "contrast": "#000000"
+      },
+      "background": {
+        "primary": "#000000",
+        "secondary": "#121212",
+        "tertiary": "#1A1A1A",
+        "overlay": "rgba(0, 0, 0, 0.85)",
+        "modal": "#262626"
+      },
+      "text": {
+        "primary": "#FFFFFF",
+        "secondary": "#A8A8A8",
+        "muted": "#737373",
+        "inverse": "#000000",
+        "link": "#33AAFF"
+      },
+      "border": {
+        "light": "#262626",
+        "medium": "#363636",
+        "dark": "#525252"
+      },
+      "status": {
+        "success": {
+          "main": "#00E676",
+          "background": "#1B5E20",
+          "contrast": "#FFFFFF"
+        },
+        "warning": {
+          "main": "#FFD740",
+          "background": "#F57F17",
+          "contrast": "#000000"
+        },
+        "error": {
+          "main": "#FF5252",
+          "background": "#B71C1C",
+          "contrast": "#FFFFFF"
+        },
+        "info": {
+          "main": "#40C4FF",
+          "background": "#01579B",
+          "contrast": "#FFFFFF"
+        }
+      }
+    },
+    "wcagCompliance": {
+      "ratios": {
+        "normalText": "4.5:1",
+        "largeText": "3:1",
+        "graphicalObjects": "3:1"
+      },
+      "tested": true,
+      "level": "WCAG AA"
+    }
+  },
+
+  "typography": {
+    "fontFamilies": {
+      "primary": {
+        "name": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+        "description": "System font stack for optimal performance and native feel",
+        "fallback": "sans-serif"
+      },
+      "display": {
+        "name": "'Inter', system-ui, sans-serif",
+        "description": "For headings and special displays",
+        "googleFont": "https://fonts.google.com/specimen/Inter",
+        "weights": [400, 500, 600, 700, 800]
+      },
+      "monospace": {
+        "name": "'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace",
+        "description": "For usernames and technical content"
+      }
+    },
+    "scale": {
+      "h1": {
+        "fontSize": "32px",
+        "lineHeight": "40px",
+        "fontWeight": 700,
+        "letterSpacing": "-0.5px",
+        "mobile": { "fontSize": "28px", "lineHeight": "36px" }
+      },
+      "h2": {
+        "fontSize": "28px",
+        "lineHeight": "36px",
+        "fontWeight": 700,
+        "letterSpacing": "-0.3px",
+        "mobile": { "fontSize": "24px", "lineHeight": "32px" }
+      },
+      "h3": {
+        "fontSize": "24px",
+        "lineHeight": "32px",
+        "fontWeight": 600,
+        "letterSpacing": "-0.2px",
+        "mobile": { "fontSize": "20px", "lineHeight": "28px" }
+      },
+      "h4": {
+        "fontSize": "20px",
+        "lineHeight": "28px",
+        "fontWeight": 600,
+        "letterSpacing": "0px",
+        "mobile": { "fontSize": "18px", "lineHeight": "24px" }
+      },
+      "h5": {
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "fontWeight": 600,
+        "letterSpacing": "0px"
+      },
+      "h6": {
+        "fontSize": "14px",
+        "lineHeight": "20px",
+        "fontWeight": 600,
+        "letterSpacing": "0px"
+      },
+      "body1": {
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "fontWeight": 400,
+        "letterSpacing": "0px"
+      },
+      "body2": {
+        "fontSize": "14px",
+        "lineHeight": "20px",
+        "fontWeight": 400,
+        "letterSpacing": "0px"
+      },
+      "caption": {
+        "fontSize": "12px",
+        "lineHeight": "16px",
+        "fontWeight": 400,
+        "letterSpacing": "0px"
+      },
+      "small": {
+        "fontSize": "11px",
+        "lineHeight": "14px",
+        "fontWeight": 400,
+        "letterSpacing": "0px"
+      },
+      "button": {
+        "fontSize": "14px",
+        "lineHeight": "20px",
+        "fontWeight": 600,
+        "letterSpacing": "0px",
+        "textTransform": "none"
+      }
+    },
+    "weights": {
+      "light": 300,
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700,
+      "extrabold": 800
+    }
+  },
+
+  "layout": {
+    "type": "Multi-page application with persistent navigation",
+    "structure": "Three-column layout (desktop), Single-column (mobile)",
+    "gridSystem": {
+      "type": "CSS Grid and Flexbox hybrid",
+      "columns": 12,
+      "gutter": "16px",
+      "margin": "20px"
+    },
+    "spacing": {
+      "scale": [0, 4, 8, 12, 16, 20, 24, 32, 40, 48, 64, 80, 96, 128],
+      "names": ["none", "xs", "sm", "md", "lg", "xl", "2xl", "3xl", "4xl", "5xl", "6xl", "7xl", "8xl", "9xl"]
+    },
+    "containers": {
+      "maxWidth": {
+        "feed": "630px",
+        "modal": "500px",
+        "profile": "935px",
+        "explore": "975px",
+        "fullWidth": "100%"
+      }
+    },
+    "breakpoints": {
+      "xs": "0px",
+      "sm": "640px",
+      "md": "768px",
+      "lg": "1024px",
+      "xl": "1280px",
+      "2xl": "1536px"
+    }
+  },
+
+  "deployment": {
+    "platform": "Netlify",
+    "requirements": {
+      "nodeVersion": "18.x or later",
+      "buildCommand": "npm run build",
+      "publishDirectory": "dist or build",
+      "functionsDirectory": "netlify/functions"
+    },
+    "steps": {
+      "automatic": [
+        "1. Log in to Netlify (https://app.netlify.com)",
+        "2. Click 'Add new site' → 'Import an existing project'",
+        "3. Connect to GitHub and select instagram-clone-v1 repository",
+        "4. Configure build settings (auto-detected)",
+        "5. Set environment variables in Netlify dashboard",
+        "6. Click 'Deploy site'",
+        "7. Netlify will auto-deploy on every push to main"
+      ],
+      "manual": [
+        "1. Install Netlify CLI: npm install -g netlify-cli",
+        "2. Build the project: npm run build",
+        "3. Login to Netlify: netlify login",
+        "4. Initialize site: netlify init",
+        "5. Deploy: netlify deploy --prod"
+      ]
+    }
+  }
+}
